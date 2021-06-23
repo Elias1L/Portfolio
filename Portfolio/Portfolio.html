@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    
+    <title>WarriorsCode_BuSHIdO</title>
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+     h1{
+      text-align: center;
+      font-size: 100px; 
+      padding-top: 40px;
+     }
+
+h2{
+  font-family: 'Acme', sans-serif;
+}
+h3{
+  font-family: 'Julius Sans One', sans-serif;
+  text-align: center;
+  font-size: xx-large;
+  padding-bottom: 40px;
+  line-height: 200%;
+}
+
+p{
+  font-family: 'Julius Sans One', sans-serif;
+  line-height: 1.8;
+}
+
+      body {
+        background: url(https://i.pinimg.com/originals/18/5e/95/185e95b43fb077a2e7a0133a83fad0cc.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Jordan_6_RingsPointer.png) , pointer!important;
+      }
+      
+      .box2 {
+        background-color: rgba(190, 190, 187, 0.247);
+        border: solid 5vmin #eee;
+        border-bottom-color: #fff;
+        border-left-color: #eee;
+        border-radius: 2px;
+        border-right-color: #eee;
+        border-top-color: #ddd;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+        0 5px 10px 5px rgba(0, 0, 0, 0.25);
+        box-sizing: border-box;
+        display: inline-block;
+        top: 390px;
+        left: 100px;
+        height: 400px;
+        width: 300px;
+        position: relative;
+        text-align: center;
+      }
+
+      .box2:before {
+        border-radius: 2px;
+        bottom: -2vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+        content: "";
+        left: -2vmin;
+        position: absolute;
+        right: -2vmin;
+        top: -2vmin;
+      }
+
+      .box1:after {
+        border-radius: 2px;
+        bottom: -2.5vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+        content: "";
+        left: -2.5vmin;
+        position: absolute;
+        right: -2.5vmin;
+        top: -2.5vmin;
+      }
+
+      img {
+        border-bottom-color: #ffe;
+        border-left-color: #eed;
+        border-right-color: #eed;
+        border-top-color: #ccb;
+        height: 100%;
+        width: 100%;
+      }
+
+      /* WATER DIV ABOUT ME */
+      .container .box {
+        position: relative;
+        width: 900px;
+        height: 400px;
+        color: rgb(145, 145, 145);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-reflect: below 15px
+        linear-gradient(tranparent, transparent, rgba(0, 0, 0, 0.2));
+      }
+
+      .container .box .content {
+        position: absolute;
+        padding: 20px;
+        text-align: center;
+        transition: 0, 5s;
+        left: 700px;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        top: -65px;
+      }
+
+      .container .box:hover {
+        color: rgb(0, 0, 0);
+      }
+      .container .box:before {
+        content: " ";
+        position: absolute;
+        top: -20px;
+        left: 500px;
+        width: 100%;
+        height: 100%;
+        border: 4px solid rgb(145, 144, 144);
+        background: rgb(5, 0, 0);
+        filter: url(#wavy);
+      }
+
+      .container .box:hover:before {
+        background: rgb(255, 255, 255);
+        transition: 2s;
+      }
+
+      .container .box:after {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 500px;
+        height: 100%;
+        border: 4px solid rgb(145, 145, 145);
+        border-right: none;
+        filter: url(#wavy);
+        background: rbga(255, 255, 255, 0.1);
+      }
+
+
+/* NAVIGATION BAR */
+ul.menu {
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Julius Sans One', sans-serif;
+   
+}
+li.menu_list {
+    height: 85px;
+    width: 90px;
+    position: relative;
+}
+
+
+li.menu_list .front, a.side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 86px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-out;
+    cursor:url(https://cdn.custom-cursor.com/db/cursor/32/Jordan_6_RingsCursor.png), pointer;
+}
+
+li.menu_list .front {
+    background-color: rgb(46, 37, 37);
+    color: #ffffff;
+    transform-origin: 0 0;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+a.side {
+    background-color: #aaa8a8;
+    color:rgb(8, 8, 8);
+    transform-origin: 0 0 85px;
+    transform: rotateY(-90deg);
+}
+
+li.menu_list:hover a.side {
+    transform: rotateY(0deg);
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+li.menu_list:hover .front {
+    transform: rotateY(90deg);
+}
+
+
+/* HOBBIES */
+.hobbies {
+        position: relative;
+        width: 168.8%;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        image-rendering: pixelated;
+        
+      }
+      
+      .kickboxing {
+        width: 300px;
+        height: 450px;
+        /* background-color: rgb(117, 117, 117);
+        border: rgb(255, 0, 0) 2px solid; */
+        border-radius: 10%;
+      }
+
+      .gamen{
+        width: 300px;
+        height: 450px;
+        /* background-color: rgba(117, 117, 117, 0);
+        border: rgb(255, 0, 0) 2px solid; */
+        border-radius: 10%;
+      }
+
+      .creating {
+        width: 300px;
+        height: 450px;
+        /* background-color: rgb(117, 117, 117);
+        border: rgb(255, 0, 0) 2px solid; */
+        border-radius: 10%;
+      }
+
+      .hobbies img{
+        width: 100%;
+        height: 60%;
+        margin-top: 15%;
+        border-radius: 10%;
+        
+      }
+
+    .hobbies p{
+      text-align: center;
+      margin-top: 30px;
+      font-size: 50px;
+      font-variant: small-caps;
+      color: white;
+    }
+
+    .hobbies p:hover {
+        color: rgb(255, 0, 0);
+        transition: 1.5s;
+      }
+      
+
+      .hobbies .kickboxing:hover{
+        background-color:black;
+        transition: 1s;
+      }
+
+      .hobbies .gamen:hover{
+        background-color:black;
+        transition: 1s;
+      }
+
+      .hobbies .creating:hover{
+        background-color:black;
+        transition: 1s;
+      }
+
+     
+
+
+
+
+ /* CONTACT */
+.footer-social-links{
+    font-size: 30px;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.footer-social-links a{
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    position: relative;
+    margin: 0 7px;
+    text-align: center;
+    display: inline-block;
+    color: #111;
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+
+.footer-social-links a i,
+.footer-social-links a span{
+    position: relative;
+    top: 2px;
+    left: 1px; 
+}
+
+.footer-social-links a:before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #111;
+    
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    transition: all 1s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+}
+
+.footer-social-links a:hover{
+    color: #fff;
+}
+
+.footer-social-links a:hover:before{
+    background: #111;
+}
+    </style>
+  </head>
+
+<body>
+  <h1>WELCOME TO MY PAGE</h1>
+  
+  <div class="footer-social-links">
+    <a href="https://www.facebook.com/ilias.meuwweuw" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://nl.linkedin.com/" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/Elias1L" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+  </div>
+  
+<br><br><br><br>
+
+<h3>Elias Lafrinedi</h3>
+  <h3>Junior Front-end Developer</h3>
+
+<ul class="menu">
+    <li class="menu_list">
+        <span class="front fas fa-home"></span>
+        <a href="#" class="side">Home</a>
+    </li>
+    <li class="menu_list">
+        <span class="front fas fa-info"></span>
+        <a href="#" class="side">About me</a>
+    </li>
+    <li class="menu_list">
+        <span class="front fas fa-briefcase"></span>
+        <a href="#" class="side">Hobbies</a>
+    </li>
+    <li class="menu_list">
+        <span class="front fas fa-paper-plane"></span>
+        <a href="#" class="side">contact</a>
+    </li>
+
+    <div class="picture">
+      <div class="box2">
+        <img
+          src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.18169-9/11181191_908900885860191_2995144329510694062_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=G6J59X185NUAX8CA6Dw&_nc_ht=scontent-amt2-1.xx&oh=de4a6d69c04714a2ce6cb7a014353edd&oe=60D63B9F"
+          alt=""
+        />
+      </div>
+    </div>
+
+<div class="container">
+            <div class="box">
+              <div class="content">
+                <br><br><br><br>
+                <h2>About Me</h2>
+                <br><br>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                  molestiae illum quia illo, est cumque consequatur, minus veniam enim
+                  quibusdam, ipsum non debitis provident quo quis reiciendis vitae
+                  quas qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Temporibus, assumenda voluptatem. Architecto, vitae libero in illum, 
+                  assumenda ut qui laudantium eos corporis itaque odio consectetur? 
+                  Alias aliquam exercitationem expedita dicta.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br><br><br>
+          <br><br><br><br><br>
+          <br><br><br><br><br>
+          <br><br><br><br><br>
+
+          <div class="hobbies">
+            <div class="kickboxing"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX9277057.jpg" alt=""><p>Kickkboxing</p></div>
+            <div class="gamen"><img src="https://st3.depositphotos.com/1007566/31888/v/600/depositphotos_318881310-stock-video-wall-with-neon-light-video.jpg" alt=""><p>Gamen</p></div>
+            <div class="creating"><img src="https://pbs.twimg.com/media/B0kXDjtCIAAALUY.jpg" alt=""><p>Creating</p></div>
+          </div>
+    
+    <svg>
+      <filter id="wavy">
+        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
+          <animate
+            attributeName="baseFrequency"
+            dur="60s"
+            values="0.02;0.05;0.02"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+        <feDisplacementmap in="SourceGraphic" scale="30" />
+      </filter>
+    </svg>
+  </body>
+</html>

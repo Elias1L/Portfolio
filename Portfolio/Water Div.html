@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container .box {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-reflect: below 15px
+          linear-gradient(tranparent, transparent, rgba(0, 0, 0, 0.2));
+      }
+
+      .container .box .content {
+        position: absolute;
+        padding: 20px;
+        text-align: center;
+        transition: 0, 5s;
+      }
+
+      .container .box:hover {
+        color: #000;
+      }
+      .container .box:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 100%;
+        height: 100%;
+        border: 4px solid #fff;
+        background: #000;
+        filter: url(#wavy);
+      }
+
+      .container .box:hover:before {
+        background: #fff;
+        transition: 0.5s;
+      }
+
+      .container .box:after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        height: 100%;
+        border: 4px solid #fff;
+        border-right: none;
+        filter: url(#wavy);
+        background: rbga(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="content">
+          <h2>Water wave div</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            molestiae illum quia illo, est cumque consequatur, minus veniam enim
+            quibusdam, ipsum non debitis provident quo quis reiciendis vitae
+            quas qui.
+          </p>
+        </div>
+      </div>
+    </div>
+    <svg>
+      <filter id="wavy">
+        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
+          <animate
+            attributeName="baseFrequency"
+            dur="60s"
+            values="0.02;0.05;0.02"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+        <feDisplacementmap in="SourceGraphic" scale="30" />
+      </filter>
+    </svg>
+  </body>
+</html>
