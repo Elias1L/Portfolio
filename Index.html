@@ -33,7 +33,15 @@
 
   <body>
     <h3 class="primary-header wow fadeIn">Elias Lafrinedi</h3>
-    <h3 class="secondary-header wow fadeIn">HTML-CSS Specialist</h3>
+
+    <div class="centering">
+      <h3 class="secondary-header wow fadeInLeft fadeOrder">HTML</h3>
+      <h3 class="secondary-header wow fadeInUp fadeOrder">-</h3>
+      <h3 class="secondary-header wow fadeInRight fadeOrder">CSS</h3>
+      &nbsp;&nbsp;&nbsp;
+      <h3 class="secondary-header wow fadeInDown fadeOrder">Specialist</h3>
+    </div>
+
     <div class="footer-social-links wow fadeInUp">
       <a
         href="https://www.linkedin.com/in/elias-lafrinedi-b6aa5a218/"
@@ -43,6 +51,9 @@
       ></a>
       <a href="https://github.com/Elias1L" title="Github" target="_blank"
         ><i class="fa fa-github"></i
+      ></a>
+      <a href="mailto:eliaslafrinedi@hotmail.com" title="E-Mail" target="_blank"
+        ><i class="fa fa-envelope"></i
       ></a>
     </div>
 
@@ -60,42 +71,65 @@
         <a href="#skills-section" class="side">Skills</a>
       </li>
       <li class="navIcons menu_list">
-        <span class="front fas fa-project-diagram"></span>
-        <a href="#" class="side">Projects</a>
-      </li>
-      <li class="navIcons menu_list">
-        <span class="front fas fa-paper-plane"></span>
-        <a href="#" class="side">contact</a>
+        <span class="front fas fa-folder-open"></span>
+        <a href="#projects" class="side">Projects</a>
       </li>
     </ul>
 
-    <div class="picture-frame">
-      <img class="picture-in-frame" src="Profielfoto.jpg" alt="" />
-    </div>
+    <div class="about-me-container">
+      <div class="picture-frame">
+        <img class="picture-in-frame" src="Profielfoto.jpg" alt="" />
+      </div>
 
-    <div class="about-me-container" id="about-me">
       <div class="box">
-        <div class="content">
+        <div class="content" id="about-me">
           <br /><br /><br />
-          <h2>Over mij</h2>
+          <h2 class="about-me-title">Over mij</h2>
+          <br />
+
           <p class="about-me-info">
-            Mijn naam is Elias Lafrinedi, woonachtig in Amsterdam.<br />
-            Ik heb een passie gecreëerd voor web-design.<br />
-            Visuele creaties is 1 van mijn drijfveren.<br />
+            Ik ben Elias Lafrinedi, woonachtig in Amsterdam. Ik heb voornamelijk
+            gewerkt in de horeca. In die sector ben ik zowel in een grote team
+            als zelfstandig werkzaam geweest. Mijn bezigheden waren aan de
+            wensen van de klanten te voldoen en altijd 1 stap vooruit te denken
+            in de service om de tevredenheid te behouden. Hoewel ik altijd
+            plezier had in mijn werkzaamheden miste ik toch op gegeven moment
+            een uitdaging.
+
+            <br /><br /><br />
+            Ik heb altijd een interesse gehad voor website development. Toen
+            kwam ik Techgrounds tegen en had ik besloten op mijn kans te grijpen
+            om de richting web-design op te gaan. Na de assesments heb ik het
+            goede nieuws gekregen om mee te doen. Binnen de opleiding kwam ik
+            erachter hoe leuk ik het vond om web-design te leren en heb ik er
+            een enorme passie voor gekregen. Wat mij erg hierin aantrekt is, het visuele
+            design in web-development en daarin kon ik mijzelf in vinden. Binnen
+            Techgrounds vond ik het concept van lesgeven goed opgezet. We leren
+            van mekaar en tevens zijn we ook zelfstandig bezig met opdrachten.
+            Door de opleiding heen waren wij mekaar aan het helpen en onze
+            kennis naar een beter niveau aan het brengen. Na mijn omscholing tot
+            HTML CSS specialist ben ik er klaar voor om mijn vaardigheden in te
+            zetten voor mooie designs die ik tot realiteit wil brengen.
+            <br /><br /><br />
+            
+            
+            
+            <!-- Ik heb een passie gecreëerd voor web-design
+            Visuele creaties is 1 van mijn drijfveren.
             Na mijn omscholing bij Techgrounds tot HTML/CSS specialist ben ik
-            klaar gestoomd voor een uitdaging.<br />
+            klaar gestoomd voor een uitdaging.
             Ik ben leergierig ingesteld om zo mijn kennis voort te brengen naar
-            een hoger niveau.<br />
+            een hoger niveau.
             Ik werk goed in teamverband maar, kan ook prima zelfstandig aan de
-            slag met de juiste kennis.<br />
+            slag met de juiste kennis.
             Ik ben als persoon sociaal ingesteld met communicatieve vaardigheden
-            op niveau.<br />
-            Wilt u meer over mij te weten komen?<br />
+            op niveau.
+            Wilt u meer over mij te weten komen
             U kunt een berichtje achterlaten onderaan op de pagina en ik zal zo
-            spoedig mogelijk reageren.<br />
-            Tevens kunt u ook mijn cv downloaden.
+            spoedig mogelijk reageren.
+            Tevens kunt u ook mijn cv downloaden. -->
             <a target="_blank" download="" href="CVElias.pdf">
-              <p class="about-me-info">download hier mijn cv</p></a
+              <p class="about-me-info CV">download hier mijn CV</p></a
             >
           </p>
         </div>
@@ -103,99 +137,101 @@
     </div>
 
     <h2 class="skills-title wow flipInX" id="skills-section">Hard-Skills</h2>
-    <div class="skill-section">
-      <div class="card">
-        <div class="card-side front">
-          <h3 class="card-title">HTML</h3>
-          <img class="card-img" src="HTML5.png" alt="" />
-        </div>
-        <div class="card-side back">
-          <h3 class="card-title">HTML</h3>
-          <div class="c100 p80 green big">
+    <div class="wrapper">
+      <div class="container">
+        <div class="skills">
+          <div class="details">
+            <img class="card-img" src="HTML5.png" alt="" />
+            <span>HTML</span>
             <span>80%</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
+          </div>
+          <div class="bar">
+            <div id="html-bar"></div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-side front">
-          <h3 class="card-title">CCS</h3>
-          <img class="card-img" src="CSS3.png" alt="" />
-        </div>
-        <div class="card-side back">
-          <h3 class="card-title">CCS</h3>
-          <div class="c100 p80 green big">
-            <span>70%</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
+        <div class="skills">
+          <div class="details">
+            <img class="card-img" src="CSS3.png" alt="" />
+            <span>CSS</span>
+            <span>80%</span>
+          </div>
+          <div class="bar">
+            <div id="css-bar"></div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-side front">
-          <h3 class="card-title">Github</h3>
-          <img class="card-img" src="Github.png" alt="" />
-        </div>
-        <div class="card-side back">
-          <h3 class="card-title">Github</h3>
-          <div class="c100 p80 green big">
+        <div class="skills">
+          <div class="details">
+            <img class="card-img" src="Github.png" alt="" />
+            <span>Github</span>
             <span>30%</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
+          </div>
+          <div class="bar">
+            <div id="github-bar"></div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-side front">
-          <h3 class="card-title">Javascript</h3>
-          <img class="card-img j-img" src="Javascript.png" alt="" />
-        </div>
-        <div class="card-side back">
-          <h3 class="card-title">Javascript</h3>
-          <div class="c100 p80 green big">
-            <span>10%</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-side front">
-          <h3 class="card-title">Bootstrap</h3>
-          <img class="card-img b-img" src="Bootstrap.png" alt="" />
-        </div>
-        <div class="card-side back">
-          <h3 class="card-title">Bootstrap</h3>
-          <div class="c100 p80 green big">
+        <div class="skills">
+          <div class="details">
+            <img class="card-img" src="bootstrap-stack.png" alt="" />
+            <span>Bootstrap</span>
             <span>20%</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
+          </div>
+          <div class="bar">
+            <div id="bootstrap-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+            <img class="card-img" src="javascript_logo.png" alt="" />
+            <span>Javascript</span>
+            <span>10%</span>
+          </div>
+          <div class="bar">
+            <div id="js-bar"></div>
           </div>
         </div>
       </div>
     </div>
 
-    <h2 class="skills-title wow flipInX" id="skills-section">Soft-Skills</h2>
-    <div class="soft-section">
-      <div class="section-1">
-        <ul class="section-text">
-          <li>Leergierig</li>
-          <li>communicatief sterk</li>
-          <li>Behulpzaam</li>
-          <li>oplossingsgerichte mindset</li>
-          <li>Creatief</li>
-        </ul>
+    <h2 class="skills-title wow flipInX" id="projects">Projects</h2>
+
+    <div class="project-section">
+      <div class="section">
+        <span class="fab fa-js-square project-icon"></span>
+        <p class="title">Javascript</p>
+        <a href="Javascript-Stopwatch/Stopwatch.html" class="link" title="Stopwatch" target="_blank">
+          <p class="project-text">Javascript-Stopwatch</p>
+        </a>
+      </div>
+
+      <div class="section1">
+        <span class="fab fa-css3-alt project-icon"></span>
+        <p class="title">CCS</p>
+        <a href="CSS-Challenges/Piggy.html" class="link" title="CSS" target="_blank">
+          <p class="project-text">Blinking eyes</p>
+        </a>
+
+        <a href="CSS-Challenges/EndNeon.html" class="link" title="CSS" target="_blank">
+          <p class="project-text">Neon-Letters</p>
+        </a>
+
+        <a href="CSS-Challenges/Chart.html" class="link" title="CSS" target="_blank">
+          <p class="project-text">Chart</p>
+        </a>
+
+        <a href="CSS-Challenges/Motion-blur Frames.html" class="link" title="CSS" target="_blank">
+          <p class="project-text">Motion-Blur</p>
+        </a>
+        <a href="CSS-Challenges/Bounce.html" class="link" title="CSS" target="_blank">
+          <p class="project-text">Bouncing ball</p>
+        </a>
+      </div>
+
+      <div class="section2">
+        <span class="fas fa-globe project-icon"></span>
+        <p class="title">Website</p>
+        <a href="Marvel-webshop/Marvel.html" class="link" title="Webshop" target="_blank">
+          <p class="project-text">Marvel Comic-Shop</p>
+        </a>
       </div>
     </div>
 

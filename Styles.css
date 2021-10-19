@@ -38,32 +38,53 @@ h2 {
   animation-fill-mode: backwards;
   animation-duration: 3s;
   margin-top: 3rem;
+  letter-spacing: 2rem;
+  text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+             0 3px 0 #777777, 0 4px 0 #666666,
+             0 5px 0 #555555, 0 6px 0 #444444,
+             0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
 }
 
 .secondary-header {
   font-family: "Julius Sans One", sans-serif;
-  text-align: center;
   font-size: 5rem;
   line-height: 200%;
   animation-fill-mode: backwards;
   animation-duration: 3s;
   animation-delay: 1s;
   margin-bottom: 1rem;
+  letter-spacing: 1rem;
+  text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+             0 3px 0 #777777, 0 4px 0 #666666,
+             0 5px 0 #555555, 0 6px 0 #444444,
+             0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
 }
+
+.fadeOrder{
+          display: inline-block;
+}
+
+.centering{
+display: flex;
+justify-content: center;
+} 
+
 
 /*--------------------SOCIAL-LINKS-CONTACT--------------------*/
 .footer-social-links {
   font-size: 3rem;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 3rem;
   animation-fill-mode: backwards;
-  animation-delay: 3s;
+  animation-delay: 3.5s;
 }
 
 .footer-social-links a {
   width: 5rem;
   height: 5rem;
-  line-height: 5rem !important;
+  line-height: 5rem;
   position: relative;
   margin: 0 0.7rem;
   text-align: center;
@@ -104,11 +125,11 @@ h2 {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 
-  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  -ms-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  transition: all 1s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -webkit-transition: all .5s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -moz-transition: all .5s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -o-transition: all .5s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -ms-transition: all .5s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all .5s cubic-bezier(0.3, 0.1, 0.58, 1);
 }
 
 .footer-social-links a:hover {
@@ -131,16 +152,17 @@ h2 {
   border-radius: 0.2rem;
   border-right-color: #eee;
   border-top-color: #ddd;
-  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.25) inset,
-    0 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.25) inset,
+    0 0.5rem 1rem 2rem rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   display: inline-block;
-  top: 39rem;
-  left: 10rem;
-  height: 40rem;
+  top: 20rem;
+  height: 50rem;
   width: 30rem;
   position: relative;
-  text-align: center;
+  display: flex;
+  margin:auto;
+  margin-bottom: 30rem;
 }
 
 .picture-frame:before {
@@ -163,17 +185,13 @@ h2 {
   width: 100%;
 }
 
-/* typografie titel tot 1 font behouden
-Cards mee met de kleur van de achtergrond
-cards kleiner maken
-Alineas bij over mij tekst */
-
 /*--------------------NAVIGATION BAR--------------------*/
 ul.menu {
   /* display: inline-block; */
   list-style-type: none;
   font-family: "Julius Sans One", sans-serif;
   font-weight: 700;
+  position: fixed;
 }
 
 .fa,
@@ -203,7 +221,8 @@ a.side {
   position: absolute;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.5s ease-out;
+  transition: all .5s linear;
+  top:-20rem;
 }
 
 li.menu_list .front {
@@ -215,8 +234,10 @@ li.menu_list .front {
 }
 
 a.side {
-  background-color: #aaa8a8;
-  color: rgb(8, 8, 8);
+  /* background-color: #aaa8a8;
+  color: rgb(8, 8, 8); */
+  background-color: rgb(46, 37, 37);
+  color: #ffffff;
   transform-origin: 0 0 8.5rem;
   transform: rotateY(-90deg);
 }
@@ -234,60 +255,71 @@ li.menu_list:hover .front {
 /*--------------------ABOUT ME--------------------*/
 .about-me-container .box {
   position: relative;
-  width: 90rem;
-  height: 40rem;
-  color: rgb(145, 145, 145);
+  width: 100rem;
+  height: 95rem;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  /* -webkit-box-reflect: below 1.5rem
+  linear-gradient(tranparent, transparent, rgba(0, 0, 0, 0.2)); */
   display: flex;
   justify-content: center;
-  font-size: 1.6rem;
   align-items: center;
-  -webkit-box-reflect: below 1.5rem
-    linear-gradient(tranparent, transparent, rgba(0, 0, 0, 0.2));
+  margin:auto;
 }
+
+.about-me-title{
+  text-align: center;
+  font-size: 5rem;
+  text-shadow:  .1rem .1rem rgb(95, 95, 95);
+}
+
 
 .about-me-info {
   font-family: "Julius Sans One", sans-serif;
   line-height: 1.3;
   font-weight: 800;
+  text-shadow:  .1rem .1rem rgb(95, 95, 95);
 }
 
 .about-me-container .box .content {
   position: absolute;
   padding: 2rem;
-  text-align: center;
-  transition: 0, 5s;
-  left: 70rem;
-  justify-content: center;
-  align-items: center;
-  width: 50rem;
+  /* transition: 0, 5s; */
+  width: 62rem;
   top: -6.5rem;
 }
 
-.about-me-container .box:hover {
-  color: rgb(0, 0, 0);
-}
 .about-me-container .box:before {
   content: " ";
   position: absolute;
   top: -2rem;
-  left: 50rem;
   width: 100%;
   height: 100%;
-  border: 0.4rem solid rgb(145, 144, 144);
-  background: rgb(5, 0, 0);
+  border: 0.4rem solid rgb(112, 112, 112);
+  background: rgb(148, 148, 148,.5);
   filter: url(#wavy);
 }
 
-.about-me-container .box:hover:before {
-  background: rgb(255, 255, 255, 0.2);
+.CV{
+  margin-top: 2rem;
+  text-align: center;
+  
+}
+
+/* .about-me-container .box:hover:before {
+  background: rgb(255, 255, 255);
   transition: 2s;
+}
+
+/* .about-me-container .box:hover {
+  color: rgb(0, 0, 0);
 }
 
 .about-me-container .box:after {
   content: "";
   position: absolute;
   top: -2rem;
-  left: 50rem;
+  left: 30rem;
   height: 100%;
   border: 0.4rem solid rgb(145, 145, 145);
   border-right: none;
@@ -297,6 +329,104 @@ li.menu_list:hover .front {
 
 /*--------------------Skill-Section--------------------*/
 
+.wrapper{
+    width: 100rem;
+    min-width: 59rem;
+    display: flex;
+    margin:auto;
+}
+
+.container{
+    width: 100%;
+    padding: 3rem 3rem 5rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(.2rem);
+    -webkit-backdrop-filter: blur(.5rem);
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    box-shadow: -.5rem .5rem .4rem #000000;
+} 
+
+.container {
+    font-family: "Julius Sans One", sans-serif;
+    /* text-shadow:  -0.5rem .1rem .4rem #000000; */
+    font-weight: 800;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.card-img{
+  width: 5rem;
+  height: 5rem;  
+}
+
+.skills:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar{
+    position: relative;
+    border: .2rem solid #000000;
+    border-radius: 2rem;
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: .9rem;
+    border-radius: 1rem;
+    background-color: #000000;
+}
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 80%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 80%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 10%;
+    }
+}
+
+#bootstrap-bar{
+    animation: bootstrap-fill 2s forwards;
+}
+@keyframes bootstrap-fill{
+    100%{
+        width: 20%;
+    }
+} 
+
+#github-bar{
+    animation: github-fill 2s forwards;
+}
+@keyframes github-fill{
+    100%{
+        width: 30%;
+    }
+} 
+
 .skills-title {
   font-size: 7rem;
   text-align: center;
@@ -304,228 +434,81 @@ li.menu_list:hover .front {
   text-decoration: underline;
   transition: 2s;
   margin-top: 25rem;
+  margin-bottom: 7rem;
 }
 
-.skill-section {
-  width: 100vw;
-  display: flex;
+
+
+
+
+
+/*--------------------PROJECTS--------------------*/
+
+.project-section{
+  height: 60rem;
+  width: 100rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(.2rem);
+    -webkit-backdrop-filter: blur(.5rem);
+    border: .2rem solid rgba(0, 0, 0, 1);
+    border-radius: 1rem;
+    margin: auto;
+    border: .2rem solid;
+    box-shadow: -.5rem .5rem .4rem #000000;
+    display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  
 }
 
-.card {
-  margin-top: 10rem !important;
-  perspective: 150rem;
-  position: relative;
-  height: 40rem;
-  width: 20rem;
-  margin: 1rem;
-  box-shadow: none;
-  background: none;
-  transition: 5s;
-}
 
-.card-side {
-  height: 35rem;
-  border-radius: 15px;
-  transition: all 0.8s ease;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  padding: 2rem;
-  color: white;
-  transition: 1.5s;
-}
 
-.card-side.back {
-  transform: rotateY(-180deg);
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-}
 
-.card-side.front {
-  background-color: #8f8282;
-  background-image: linear-gradient(160deg, #858585 0%, #7a7979 100%);
-  /* background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); */
-}
 
-.card-side.front:hover {
-  top: -10rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 10px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.card:hover .card-side.front {
-  transform: rotateY(180deg);
-}
-
-.card:hover .card-side.back {
-  transform: rotateY(0deg);
-  top: -2rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 10px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.card-title {
-  font-family: "Acme", sans-serif;
+.project-text{
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
   text-align: center;
-  text-decoration: underline;
-  font-size: 3rem;
-}
-
-.card-img {
-  height: 20rem;
-  width: 10rem;
-  align-items: center;
-  margin-top: 5rem;
-  margin-left: 2rem;
-  image-rendering: pixelated;
-}
-
-.b-img,
-.j-img {
-  margin-top: 2rem;
-  margin-left: 2rem;
-  height: 25rem;
-  align-items: center;
-  image-rendering: pixelated;
-}
-
-.section-1 {
-  margin: 0 auto;
-  display: flex;
-  width: 50rem;
-  height: 40rem;
-  background-image: linear-gradient(160deg, #858585 0%, #7a7979 100%);
-  margin-top: 10rem;
-  justify-content: center;
+  border: 2px solid black;
+  padding:2rem;
+  margin:1rem;
+  background-color: rgb(248, 71, 71);
   border-radius: 1.5rem;
 }
 
-
-
-.section-text {
-    margin-top: 2rem;
-    text-align: center;
-    list-style-type:disc;
-    font-size: 2.5rem;
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 800;
-    line-height: 7rem;
-    text-decoration: underline;
+.project-text:hover{
+  transform: scale(1.1);
+  transition: .4s;
+  background-color: rgb(4, 204, 4);
+  color: white;
+  border: 2px solid rgb(248, 71, 71);
+  text-decoration: underline;
 }
 
-/*--------------------Skill-Section--------------------*/
+.link:link{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 
-/* .skills-title {
-    font-size: 7rem;
-    text-align: center;
-    height: 5rem;
-    text-decoration: underline;
-    transition: 2s;
-    margin-top: 25rem;
-  }
-  
-  .skill-section {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .card {
-    margin-top: 10rem !important;
-    perspective: 150rem;
-    position: relative;
-    height: 50rem;
-    width: 40rem;
-    margin: 2rem;
-    box-shadow: none;
-    background: none;
-    transition: 5s;
-  }
-  
-  .card-side {
-    height: 50rem;
-    border-radius: 15px;
-    transition: all 0.8s ease;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    padding: 2rem;
-    color: white;
-    transition: 1.5s;
-  }
-  
-  .card-side.back {
-    transform: rotateY(-180deg);
-    background-color: #4158d0;
-    background-image: linear-gradient(
-      43deg,
-      #4158d0 0%,
-      #c850c0 46%,
-      #ffcc70 100%
-    );
-  }
-  
-  .card-side.front {
-    background-color: #8f8282;
-    background-image: linear-gradient(160deg, #858585 0%, #7a7979 100%);
-    /* background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); 
-  }
-  
-  .card-side.front:hover {
-    top: -10rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 10px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  
-  .card:hover .card-side.front {
-    transform: rotateY(180deg);
-  }
-  
-  .card:hover .card-side.back {
-    transform: rotateY(0deg);
-    top: -2rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 10px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  
-  .card-title {
-    font-family: "Acme", sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 5rem;
-    margin: 0;
-  }
-  
-  .card-img {
-    height: 30rem;
-    align-items: center;
-    margin-top: 7rem;
-  }
-  
-  .b-img,
-  .j-img{
-      margin-top: 2rem;
-      height: 40rem;
-  } 
-*/
+.title{
+  font-size: 3rem;
+  text-decoration: underline;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.project-icon{
+  font-size: 5rem;
+  margin-left: 5rem;
+}
+
+.section , .section1 , .section2{
+  margin-top: 5rem;
+  line-height: 4rem;
+}
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991px) {
@@ -573,76 +556,3 @@ li.menu_list:hover .front {
 
 
 
-/* HOBBIES */
-
-/* .hobbies {
-    position: relative;
-    width: 168.8%;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    image-rendering: pixelated;
-    
-  }
-  
-  .kickboxing {
-    width: 300px;
-    height: 450px;
-    background-color: rgb(117, 117, 117);
-    border: rgb(255, 0, 0) 2px solid;
-   border-radius: 10%;
-  }
-
-  .gamen{
-    width: 300px;
-    height: 450px;
-    background-color: rgba(117, 117, 117, 0);
-    border: rgb(255, 0, 0) 2px solid;
-    border-radius: 10%;
-  }
-
-  .creating {
-    width: 300px;
-    height: 450px;
-    /* background-color: rgb(117, 117, 117);
-    border: rgb(255, 0, 0) 2px solid;
-    border-radius: 10%;
-  }
-
-  .hobbies img{
-    width: 100%;
-    height: 60%;
-    margin-top: 15%;
-    border-radius: 10%;
-    
-  }
-
-.hobbies p{
-  text-align: center;
-  margin-top: 30px;
-  font-size: 50px;
-  font-variant: small-caps;
-  color: white;
-}
-
-.hobbies p:hover {
-    color: rgb(255, 0, 0);
-    transition: 1.5s;
-  }
-  
-
-  .hobbies .kickboxing:hover{
-    background-color:black;
-    transition: 1s;
-  }
-
-  .hobbies .gamen:hover{
-    background-color:black;
-    transition: 1s;
-  }
-
-  .hobbies .creating:hover{
-    background-color:black;
-    transition: 1s;
-  }  */
