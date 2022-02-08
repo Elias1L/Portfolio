@@ -574,8 +574,7 @@ li.menu_list:hover .front {
   html{
     font-size: 45%;
   }
- 
- 
+
   .menu{
     display: none;
   }
@@ -590,8 +589,8 @@ li.menu_list:hover .front {
    font-size: 25%;
  }
 
- body{
-   margin: 0 auto;
+ .about-me-info{
+   text-shadow: none;
  }
 
  .menu{
