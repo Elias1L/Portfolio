@@ -589,6 +589,11 @@ li.menu_list:hover .front {
    font-size: 25%;
  }
 
+ .about-me-container{
+   width: fit-content;
+   margin: 0 auto;
+ }
+
  .about-me-info{
    text-shadow: none;
  }
