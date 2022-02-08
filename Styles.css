@@ -492,7 +492,7 @@ li.menu_list:hover .front {
   font-size: 2rem;
   font-weight: 900;
   text-align: center;
-  border: 2px solid black;
+  border: .2rem solid black;
   padding:2rem;
   margin:1rem;
   background-color: rgb(107, 100, 100);
@@ -505,7 +505,7 @@ li.menu_list:hover .front {
   transform: scale(1.1);
   background-color: rgb(63, 134, 41);
   color: white;
-  border: 2px solid rgb(41, 228, 17);
+  border: .2rem solid rgb(41, 228, 17);
   text-decoration: underline;
 }
 
@@ -545,12 +545,19 @@ li.menu_list:hover .front {
 
 @media (min-width: 576px) {
   
+
 }
 
 /*// MOBILE - Extra small devices (portrait phones, less than 576px)*/
 
 @media (max-width: 575.98px) {
- 
+  /* html{
+    font-size: 10%;
+  }
+  .project-section{
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+  } */
 }
 
 
@@ -563,10 +570,34 @@ li.menu_list:hover .front {
 /*// TABLET - // Small devices (landscape phones, less than 768px)*/
 
 
-@media (max-width: 767.98px) {
-
+@media (max-width: 768px) {
+  html{
+    font-size: 45%;
+  }
+ 
+ 
+  .menu{
+    display: none;
+  }
 }
 
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+ html{
+   font-size: 25%;
+ }
+
+ body{
+   margin: 0 auto;
+ }
+
+ .menu{
+   display: none;
+ }
+}
 
 /*// DESKTOP  - Large devices (desktops, 992px and up)*/
 
@@ -593,6 +624,53 @@ li.menu_list:hover .front {
 @media (max-width: 1199.98px) {
 
 }
+
+
+
+
+
+
+
+/* Responsiveness Patrick
+Media Queries for React
+
+HD Screen
+1920 x 1080 px (landscape)
+@media (max-width: 102vw) {
+}
+
+Laptop
+1535 x 864 px (landscape) 96rem
+@media (max-width: 81vw {
+}
+
+Tablet
+1024 x 768 px (landscape) 64rem
+@media (max-width: 54vw) {
+}
+
+768 x 1024 px (portrait) 48rem
+@media (max-width: 41vw) {
+}
+
+Mobile
+640 x 360 px (landscape) 40rem
+@media (max-width: 34vw) {
+}
+
+360 x 640 px (portrait) 22.5rem
+@media (max-width: 19vw) {
+}
+
+
+-webkit-transform:
+-moz-transform:
+
+-webkit-transition:
+-moz-transition: */
+
+
+
 
 
 
